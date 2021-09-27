@@ -243,6 +243,7 @@
         divContainer.appendChild(table);
     document.getElementById("loader").style.visibility = "hidden";
     document.getElementById("loader").style.height = "0vh";
+    document.getElementById("showData").style.marginBottom = "-8.5vh";
 
     $("#re").css("visibility","visible");
     $("#re").css("display","none");
@@ -251,12 +252,20 @@
   }
     </script>
     <style>
+      @font-face {
+          font-family: "Gilroy";
+          src: url("../Fonts/Gilroy-FREE/Gilroy-Light.otf");
+        }
+        @font-face {
+        font-family: "GilroyEB";
+        src: url("../Fonts/Gilroy-FREE/Gilroy-ExtraBold.otf");
+      }
       table, th, td
       {
+        
           margin:2vh 0;
-          color: var(--thirt-color);
          
-          font:1.5vh Verdana;
+          font:1.5vh "Gilroy";
       }
       td{
         text-align: left;
@@ -272,7 +281,7 @@
       bdi{
         font-size: 2.5vh;
         font-weight:bold;
-        font-family: inherit;
+        font-family: "GilroyEB";
       }
   #loader {
   visibility:hidden;
@@ -337,7 +346,7 @@
           </div>
         </div>
 
-        <section class="footer">
+        <section id="foot" class="footer">
           <p class="text"><a  href="https://wa.link/4o7d77">Si quiere adquirir el sistema haga click aqui</a></p>
           <p class="text">Diseño y desarrollo por Diego Simon</p>
         </section>
