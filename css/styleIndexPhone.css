@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@font-face {
+  font-family: "Gilroy";
+  src: url("../Fonts/Gilroy-FREE/Gilroy-Light.otf");
+}
 
 @media only screen and (min-width:768px){
     .phoneContender{
@@ -138,6 +142,7 @@
             color: #dfe0e2;
             margin-top: 1.5vh;
             font-size: 2vh;
+            font-family: 'Gilroy';
           }
       }
       @media only screen and (max-width:767px){
