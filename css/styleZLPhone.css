@@ -21,11 +21,13 @@
         .topborder{
           background-color: #dfe0e2;
           z-index: -3;
+          width: 100%;
         }
         .bottomborder{
           background-color:#1e212a;
           z-index: -3;
           bottom: 0;
+          width: 100%;
         }
         .encabeza2{
           text-align: center;
