@@ -32,8 +32,10 @@
   function read_value() {
   
   $("#re").css("visibility","hidden");
+  $("#sponsor").css("display","none");
   
    document.getElementById("loader").style.visibility = "visible";
+   document.getElementById("loader").style.height = "10vh";
   
   var url = script_url+"?action=read";
   
@@ -240,7 +242,10 @@
         divContainer.innerHTML = "";
         divContainer.appendChild(table);
     document.getElementById("loader").style.visibility = "hidden";
+    document.getElementById("loader").style.height = "0vh";
+
     $("#re").css("visibility","visible");
+    $("#re").css("display","none");
     
     });
   }
@@ -271,6 +276,7 @@
       }
   #loader {
   visibility:hidden;
+  height: 0vh;
   }
   
   </style>
@@ -306,16 +312,11 @@
             <input id="b1" type="button" onclick="read_value()"class="btn" style="height: 8vh; width: 40vh; font-size: 3vh; margin: 6vh 0 3vh 0; border:1px solid #1e212a; color:#1e212a;" value="Ver Zonas" />
             <input id="final" type="button" onclick="read_value()"class="btn" style="height: 8vh; width: 40vh; font-size: 3vh; margin: 6vh 0 3vh 0; display:none; border:1px solid #1e212a; color:#1e212a;" value="Actualizar Zonas" />
             <div id="showData"></div>
-            <div id="loader"><lord-icon
-              src="https://cdn.lordicon.com/vlupvdhl.json"
-              trigger="loop"
-              colors="primary:#06365c,secondary:#e4e4e4"
-              style="width:150px;height:150px">
-          </lord-icon></div>
+            <div id="loader"><img src="../photos/icons/loading.gif" alt="" style="height: 90px; width: 90px;"></div>
           </div>
         </div>
         
-        <div class="container text-center">
+        <div id="sponsor" class="container text-center">
           <h5 style="color:#1e212a; padding-top: 3vh;">Auspician:</h5>
           <div class="row justify-content-center align-items-center">
             <div class="col-xl-2 text-center">
