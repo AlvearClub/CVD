@@ -8,14 +8,7 @@
         transform: translateX(166px);
     }
 }
-@font-face {
-    font-family: "GilroyEB";
-    src: url("../Fonts/Gilroy-FREE/Gilroy-ExtraBold.otf");
-  }
-@font-face {
-    font-family: "Gilroy";
-    src: url("../Fonts/Gilroy-FREE/Gilroy-Light.otf");
-  }
+
 .computerContender{
     z-index: -2;
     width: 100%;
@@ -86,7 +79,7 @@
         font-family: 'Rubik', sans-serif;
     }
     h5{
-        font-family: "Gilroy";
+        font-family: 'Roboto', sans-serif;
     }
     .column-1 p{
         font-size: 16px;
@@ -131,7 +124,7 @@
         transform: translateX(150px);
     }
     .footer{
-        background-color: #1e212a;
+        background-color: transparent;
         padding: 20px 100px;
         display: flex;
         justify-content: space-between;
@@ -139,33 +132,5 @@
         margin-top: 5vh;
         font-size: 14px;
         color:#138ff5;
-        font-family: "GilroyEB";
-      }
-      .botones, .auspi, body{
-          background-color: #1e212a;
-      }
-      .botones .row{
-        margin: auto;
-      }
-      .botones .vuton{
-        border-radius: 30px;
-        border: 2px solid #dfe0e2;
-        width: 60%;
-        text-align: center;
-        padding: 30px 3vw 10px 3vw;
-        margin: auto;
-        margin-top: 3.5vh;
-      }
-      .botones img{
-        height: 4.5vh;
-      }
-      .botones i{ 
-        font-size: 5vh;
-        color: #dfe0e2;
-      }
-      .botones .textoBoton{
-        color: #dfe0e2;
-        margin-top: 1.5vh;
-        font-size: 2vh;
-        font-family: 'Gilroy';
+        font-family: 'Roboto', sans-serif;
       }
